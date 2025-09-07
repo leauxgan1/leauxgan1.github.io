@@ -98,6 +98,7 @@ html {
   justify-content: center;
   background-color: var(--background);
   color: var(--font-color);
+  font-size: 1.15em;
 }
 
 body {
