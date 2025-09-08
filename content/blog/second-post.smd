@@ -1,5 +1,5 @@
 ---
-.title = "Second Post",
+.title = "Datastar Retrospective",
 .date = @date("2025-09-06T00:00:00"),
 .author = "Logan Langdon",
 .layout = "post.shtml",

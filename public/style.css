@@ -38,7 +38,7 @@ header {
   flex-direction: column;
   justify-content: center;
   padding-top: var(--size-4);
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 .profile-image {
@@ -63,7 +63,6 @@ blockquote {
 }
 
 blockquote>* {
-  font-size: 1.2em;
   color: var(--tertiary);
 }
 
