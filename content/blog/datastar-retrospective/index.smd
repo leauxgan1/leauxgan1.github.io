@@ -1,0 +1,13 @@
+---
+.title = "Datastar Retrospective",
+.date = @date("2025-09-06T00:00:00"),
+.author = "Logan Langdon",
+.layout = "post.shtml",
+.draft = false,
+--- 
+
+This post is a retrospective on my experience using the Datastar framework and building some small webapps.
+
+
+
+

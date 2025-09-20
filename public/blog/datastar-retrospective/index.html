@@ -19,28 +19,22 @@
   </script>
   
     <style>
-      .date {
-        font-size: 0.9em;
+      #prev-next {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 40px;
       }
 
-      p {
+      figure {
+        align-self: center;
         text-align: center;
+        font-style: italic;
       }
 
-      .title h3 {
-        margin-top: 0;
-      }
-
-      .inline-listing {
+      .post {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-block: var(--size-4);
-        border: var(--size-1) dashed var(--primary);
-        border-radius: var(--radius-3);
-        padding: var(--size-4) var(--size-4);
       }
     </style>
   
@@ -66,23 +60,14 @@
     <hr>
   </header>
   
-    <h2>Blog</h2>
-    <div><p>This page contains all of my blog posts.</p><p>Most of my blog posts involve explorations into new technologies or retrospectives on experimentations and projects.</p><p>Enjoy!</p></div>
-    <div class="block">
-      <h2>Post list</h2>
+    <h2>Datastar Retrospective</h2>
+    <div class="post"><p>This post is a retrospective on my experience using the Datastar framework and building some small webapps.</p></div>
+    <div id="prev-next">
+      <div></div>
       <div>
-        <a class="title inline-listing" href="/blog/html-rendering-strategies/">
-          <div>
-            <h3>Implications of HTML Rendering Strategies</h3>
-            <span class="date">September 06, 2025</span>
-          </div>
-        </a>
-      
-        <a class="title inline-listing" href="/blog/datastar-retrospective/">
-          <div>
-            <h3>Datastar Retrospective</h3>
-            <span class="date">September 06, 2025</span>
-          </div>
+        <a href="/blog/html-rendering-strategies/">
+          <span>Implications of HTML Rendering Strategies</span>
+          →
         </a>
       </div>
     </div>

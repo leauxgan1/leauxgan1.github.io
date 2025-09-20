@@ -18,7 +18,7 @@ Soon after, however, SPA frameworks are also introduced such as React and after 
 
 I remember that this didn't feel like that much of a difference from using JS proper, mostly because I didn't understand the implications that React imposes, namely using Client Side Rendering. 
 
-## A beginner's perspective of the world of web development
+### A beginner's perspective of the world of web development
 
 
 When starting out with web fundamentals, there is usually no conception of the server.
@@ -42,7 +42,7 @@ Instead of doing the same work over and over again, I can have a reusable sectio
 
 And hey, that's kind of like a function! What could be more ideal for my frontend than to be a function of state.
 
-## The true scope of the Webapp
+### The true scope of the Webapp
 
 Once more experience has been gained and projects using these technologies are experimented with, it quickly becomes evident that this perspective is quite narrow.
 
@@ -62,7 +62,7 @@ Once we are given some time to zoom out, we see the true scope from the bottom-u
 
 Given this perspective, we can see that our frontend framework is actually the furthest thing from the source of truth, making it extremely inaccurate to assume as such.
 
-## The Misapplication of 80/20
+### The Misapplication of 80/20
 
 The assumption that many frontend frameworks seem to make is that a majority of the computation should be on the frontend to maximize responsiveness and the minority is sending information from the backend to the client.
 
@@ -80,7 +80,7 @@ However, the buy-in of a meta-framework like Next is quite high for what it offe
 
 We can create smaller and simpler solutions for this purpose:
 
-## VanillaJS & Webcomponents
+### VanillaJS & Webcomponents
 
 In this talk at Utah JS by Maximiliano Firtman, [Vanilla JS: You Might not need that Library](https://youtu.be/V2eM0EdTfmk), the many options we have as web developers which don't involve bringing in large frontend libraries are mentioned in detail.
 
@@ -106,7 +106,7 @@ I could ditch reactivity altogether and just allow the server to rerender pages 
 
 Speaking of which:
 
-## Simulating the SPA with an MPA: HATEOAS 
+### Simulating the SPA with an MPA: HATEOAS 
 
 An approach becoming more popular nowadays with smaller apps is to use a hypermedia-centric library such as HTMX to drive the state of an application.
 
@@ -140,7 +140,7 @@ Client:
 
 Rather than two transformations of the data, the data only underwent one. Success!
 
-### Diversity in Hypermedia
+#### Diversity in Hypermedia
 
 With HTMX being the biggest name in the HATEOAS space at the moment, most of the assumptions about HATEOAS and its capabilities are based on HTMX's capabilities.
 
@@ -148,7 +148,7 @@ This is far from accurate, as HATEOAS just limits you to using, well, Hypermedia
 
 But there are many more considerations such as what kind of Hypermedia to use, how to specify partial rerenders, and what additional features to use to enhance the experience for users.
 
-### Datastar
+#### Datastar
 
 By far my favorite approach to HATEOAS is not a hypermedia library, but a hypermedia framework!
 
@@ -160,7 +160,7 @@ Datastar also solves the need for a client-side state library by providing a sig
 
 All of these improvements make Datastar the choice for me to simplify web development.
 
-## Conclusion
+### Conclusion
 
 With hindsight, we can look back at the recent history of modern web development and learn from our mistakes.
 
