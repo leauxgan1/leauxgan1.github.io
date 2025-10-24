@@ -28,14 +28,14 @@
     </label>
   </div>
   <header>
-    <h1 id="site-title">Logan Langdon</h1>
-    <h3 id="site-subtitle"><i>Portfolio</i></h3>
+    <h1 style="margin: 0; padding: var(--size-1)" id="site-title">Logan Langdon</h1>
+    <h3 style="margin: 0; padding: 0" id="site-subtitle"><i>Portfolio</i></h3>
     <nav>
-      <a href="$site.page('').link()">Home</a>
-      &nbsp; • &nbsp;
-      <a href="$site.page('projects').link()">Projects</a>
-      &nbsp; • &nbsp;
-      <a href="$site.page('blog').link()">Blog</a>
+      <a class="nav-link" href="$site.page('').link()">Home</a>
+      <div class="nav-sep">&nbsp; • &nbsp;</div>
+      <a class="nav-link" href="$site.page('projects').link()">Projects</a>
+      <div class="nav-sep">&nbsp; • &nbsp;</div>
+      <a class="nav-link" href="$site.page('blog').link()">Blog</a>
     </nav>
     <hr>
   </header>

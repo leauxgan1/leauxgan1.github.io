@@ -22,26 +22,6 @@
       .date {
         font-size: 0.9em;
       }
-
-      p {
-        text-align: center;
-      }
-
-      .title h3 {
-        margin-top: 0;
-      }
-
-      .inline-listing {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-block: var(--size-4);
-        border: var(--size-1) dashed var(--primary);
-        border-radius: var(--radius-3);
-        padding: var(--size-4) var(--size-4);
-      }
     </style>
   
 </head>
@@ -54,14 +34,14 @@
     </label>
   </div>
   <header>
-    <h1 id="site-title">Logan Langdon</h1>
-    <h3 id="site-subtitle"><i>Portfolio</i></h3>
+    <h1 style="margin: 0; padding: var(--size-1)" id="site-title">Logan Langdon</h1>
+    <h3 style="margin: 0; padding: 0" id="site-subtitle"><i>Portfolio</i></h3>
     <nav>
-      <a href="/">Home</a>
-      &nbsp; • &nbsp;
-      <a href="/projects/">Projects</a>
-      &nbsp; • &nbsp;
-      <a href="/blog/">Blog</a>
+      <a class="nav-link" href="/">Home</a>
+      <div class="nav-sep">&nbsp; • &nbsp;</div>
+      <a class="nav-link" href="/projects/">Projects</a>
+      <div class="nav-sep">&nbsp; • &nbsp;</div>
+      <a class="nav-link" href="/blog/">Blog</a>
     </nav>
     <hr>
   </header>
@@ -72,17 +52,13 @@
       <h2>Post list</h2>
       <div>
         <a class="title inline-listing" href="/blog/html-rendering-strategies/">
-          <div>
-            <h3>Implications of HTML Rendering Strategies</h3>
-            <span class="date">September 06, 2025</span>
-          </div>
+          <h3>Implications of HTML Rendering Strategies</h3>
+          <span class="date">September 06, 2025</span>
         </a>
       
         <a class="title inline-listing" href="/blog/datastar-retrospective/">
-          <div>
-            <h3>Datastar Retrospective</h3>
-            <span class="date">September 06, 2025</span>
-          </div>
+          <h3>Datastar Retrospective</h3>
+          <span class="date">September 06, 2025</span>
         </a>
       </div>
     </div>

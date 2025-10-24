@@ -1,5 +1,5 @@
 ---
-.title = "Who Am I?",
+.title = "About me",
 .date = @date("2025-09-03T00:00:00"),
 .author = "Logan Langdon",
 .layout = "index.shtml",
@@ -8,7 +8,9 @@
 
 []($image.siteAsset('profile.png').attrs('profile-image'))
 
-I am a Web Developer specializing in Backend Development.
+> Hello there!
+
+My name is Logan and I am a Web Developer specializing in Backend Development.
 
 I am passionate about leveraging web technologies to make information and community more accessible and improve users' experiences on the web!
 
@@ -30,25 +32,18 @@ However, I am looking for more industry experience to apply my skills and I am w
 
 My language of choice for backend development is Golang due to its readability and relative performance as well as many other great design choices.
 
-It would be difficult to speak about backend development without bringing up the elephant in the room...
-
-PHP!
-
-It is undeniable that PHP is a greatly important and widely used tool in backend development and is similarly simple compared with Go.
-
-PHP's ubiquity and rapid development draw many businesses to it, and I appreciate its community and tooling greatly.
+I also have great experience with Python backends such as Flask and Django, as well as PHP
 
 > Frontend
 
-Single page applications have become the most popular strategies for the frontend of most webapps, so I have a good amount of experience with:
+The single page application architecture has become the most popular strategy for the frontend of most webapps, so I have a good amount of experience with:
 
 - React
 - Vue
 - Solidjs
 - Svelte
 
-I do believe alternative strategies like HATEOAS have many benefits over SPAs, however, and am familiar with HTMX and Datastar for creating simple, efficient apps and avoiding frontend complexity.
-
+For alternatives to SPAs, minimalist libraries such as alpine for reactivity and HATEOAS for server-side rendering are tools I tend to prefer.
 
 > Database
 

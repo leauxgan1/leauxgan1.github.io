@@ -1,14 +1,11 @@
 :root {
-  /*
-    Define page variables so they can be changed on the fly
-  */
   --primary: #5d9cec;
   --secondary: #fdfdfd;
   --tertiary: #2F69C2;
-  --background: #d0f0ff;
+  --background: #a0d0ff;
   --font-color: #2b2d62;
   --card-color: #fff;
-  --border-color: #D8C4A2;
+  --border-color: #e0a412;
   --accent-gradient: linear-gradient(35deg, var(--tertiary), var(--primary) 30%, var(--font-color) 60%);
 }
 
@@ -19,7 +16,35 @@
   --background: #1a1a1a;
   --font-color: #e0e0e0;
   --card-color: #252525;
-  --border-color: #4A4A4A;
+  --border-color: #8A4A2A;
+}
+
+h1 {
+  margin-block: var(--size-7);
+  padding-block: var(--size-5);
+
+}
+
+h2 {
+  margin-block: var(--size-6);
+  padding-block: var(--size-4);
+}
+
+h3 {
+  margin-block: var(--size-5);
+  padding-block: var(--size-3);
+
+}
+
+h4 {
+  margin-block: var(--size-4);
+  padding-block: var(--size-2);
+
+}
+
+h5 {
+  margin-block: var(--size-3);
+  padding-block: var(--size-1);
 }
 
 h1,
@@ -29,7 +54,6 @@ h4,
 h5 {
   text-align: center;
   color: var(--tertiary);
-  margin-block: var(--size-6);
   max-inline-size: none;
 }
 
@@ -43,10 +67,10 @@ header {
 
 .profile-image {
   max-width: var(--size-12);
-  border-radius: var(--radius-3);
+  border-radius: var(--radius-4);
   border: var(--size-1) solid var(--border-color);
   margin-inline: auto;
-  margin-bottom: var(--size-4);
+  margin-block: var(--size-3);
   animation: fade-in-bloom .5s var(--ease-3), slide-in-left 0.5s var(--ease-3);
 }
 
@@ -69,20 +93,37 @@ blockquote>* {
 a {
   color: var(--tertiary);
   text-decoration: none;
-  transition: background-position 0.3s var(--ease-2);
   color: var(--tertiary);
-  background: var(--accent-gradient);
-  display: inline-block;
-  background-size: 225% auto;
-
-  /* Make the text transparent to show the background */
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  transition: color 0.2s;
 }
 
 a:hover {
-  background-position: 33% 0%;
+  color: var(--primary);
+}
+
+nav {
+  margin-top: var(--size-4);
+}
+
+.nav-link {
+  display: inline-block;
+
+  border: 0px solid var(--tertiary);
+  border-radius: var(--radius-2);
+  box-sizing: border-box;
+  padding: 6px;
+  margin: -4px;
+  transition: border-width 0.2s cubic-bezier(0, 0.2, 0, 0.2), padding 0.2s cubic-bezier(0, .2, 0, .2);
+}
+
+.nav-link:hover {
+  border-width: 4px;
+  padding: 2px;
+}
+
+.nav-sep {
+  padding: 6px;
+  margin: -4px;
 }
 
 * {
@@ -97,17 +138,22 @@ html {
   justify-content: center;
   background-color: var(--background);
   color: var(--font-color);
-  font-size: 1.15em;
+  font-size: 1em;
+  overflow: hidden;
+
 }
 
 body {
   margin: 0;
   width: min(100% - 2em, 800px);
-  height: fit-content;
   padding-inline: 64px;
   display: flex;
   flex-direction: column;
+  overflow: auto;
+  scrollbar-width: none;
+  height: 100%;
 }
+
 
 #site-title {
   color: var(--tertiary);
@@ -175,7 +221,6 @@ footer {
 hr {
   margin-block: var(--size-2);
   width: 100%;
-  height: var(--size-1);
 }
 
 p {
@@ -203,14 +248,14 @@ p {
 
 .round {
   position: absolute;
-  inset: 0 0 0 0;
+  inset: 15px 0 0 15px;
   width: var(--size-7);
   height: var(--size-7);
   background-color: var(--background);
-  border: var(--size-1) solid var(--tertiary);
+  border: var(--size-1) solid var(--border-color);
   border-radius: 50%;
   cursor: pointer;
-  transition: border-width 0.2s var(--ease-in-1);
+  transition: border-width 0.2s cubic-bezier(0, 0.2, 0, 0.2);
 }
 
 .round:hover {
@@ -223,4 +268,27 @@ code {
 
 p {
   margin-block: var(--size-2);
+}
+
+.inline-listing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 100%;
+  margin-block: var(--size-4);
+  box-sizing: border-box;
+  border: var(--size-1) dashed var(--primary);
+  border-radius: var(--radius-3);
+  padding: var(--size-3);
+  transition: border-color 0.2s;
+}
+
+.inline-listing:hover {
+  border-color: var(--tertiary);
+
+  h3 {
+    color: var(--primary);
+  }
 }
