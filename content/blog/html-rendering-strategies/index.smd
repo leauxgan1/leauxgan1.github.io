@@ -94,17 +94,13 @@ While some may reject these as "reinventing the wheel" there are many benefits t
 
 Since they are smaller and simpler tools, they allow for smaller bundle sizes and more control by the developer as to how they work and interact with the rest of the frontend.
 
-This approach allows you to compose your reactivity model with your components rather than coupling them out of the box. 
+Webcomponents come with some restrictions to properly take advantage of their benefits, such as the requirement to be self contained and this coupled with the clunky syntax of vanilla js can make development more difficult.
 
-I can choose to use vanilla web components with alpine's reactivity through inline attributes.
+However, tools such as Lit, Stencil, and Fast components allow you to compile a simpler syntax into fully usable components.
 
-I could choose to use Lit-html's components with full rerenders or their experiemental preact signals package.
+This combines the benefits of the modern SPA approach with the flexibility of web components.
 
-I can opt for a bare-bones approach, defining a render component which I called whenever I change state internally.
-
-I could ditch reactivity altogether and just allow the server to rerender pages or fragments if the cost of doing so is minimal.
-
-Speaking of which:
+However, if we're looking for a more old-school way to replace the modern spa, we should look no further than:
 
 ### Simulating the SPA with an MPA: HATEOAS 
 
